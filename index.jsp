@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<h1>UTP</h1>
+<h1>Ejemplo de Tabla</h1>
 <body>
 <table>
 <table border="2px">
