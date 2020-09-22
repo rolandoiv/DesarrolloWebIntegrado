@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rolando Ipanaque</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<header class="cabecera">
+		<div class="contenedor">
+			<div class="contenedor2">
+			<img src="imagenes/logo2.png" width="300" height="200">
+
+			<nav class="navegacion">
+				<script>  //Indicar fecha y hora actual
+   function textoFecha(fecha){
+    var numDiaSem = fecha.getDay();   
+    var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+    var diaLetras = diasSemana[fecha.getDay()];
+    var meses = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+    var mesLetras = meses[fecha.getMonth()];  //El mes en letras
+    var diaMes = (fecha.getDate());   //getDate() devuelve el dia(1-31).
+    var anho = fecha.getFullYear();  //getFullYear() devuelve el año(4 dígitos).
+    var hora = fecha.getHours();    //getHours() devuelve la hora(0-23).
+    var min = fecha.getMinutes();   //getMinutes() devuelve los minutos(0-59).
+    if ((min >= 0) && (min < 10)) {    //Algoritmo para añadir un cero cuando el min tiene 1 cifra.
+      min = "0" + min;
+    }
+    var devolver = "Hoy es " + diaLetras+ ", " + diaMes + " de " + mesLetras + " de " + anho + " y son las " + hora + ":" + min + " horas.";
+    return devolver;
+  }
+  var fecha = new Date();  //Declaramos el objeto fecha actual
+  document.write(textoFecha(fecha));
+</script>
+
+
+					<ul>
+  <li><a class="active" href="#home">Inicio</a></li>
+  <li><a href="#Galeria">Galeria</a></li>
+  <li><a href="#Blog">Blog</a></li>
+  <li><a href="#Testimonios">Testimonios</a></li>
+  <li><a href="#Contactanos">Contactanos</a></li>
+  <li><a href="calculadora.html">Calculadora</a></li>
+  <li><a href="convertidor.html">Convertidor</a></li>
+</ul>
+				
+	    	</nav>
+	    </div>
+
+
+	    <h1>Rolando Ipanaque Photography</h1>
+ </div>
+</header>
+
+<section>
+
+	<h2>Quien soy</h2>
+	<p >Fotografo Freelance de Lima, otro apasionado por la fotografia. Me gusta aprovechar todos los momentos de luz idónea posibles que la Naturaleza nos brinda. <br>
+	En estos años practicando fotografía he buceado en varios disciplinas como el Paisaje, alguna sesion de Retratos y algo de Arquitectura... Aunque mi ultima etapa se ha basado más en la Fotografia Nocturna y La Pintura de Luz en el Paisaje o Escena, encontrando en la noche la tranquilidad y esos colores especiales y caprichosos de sus cielos... El brillo de las estrellas o lo grandicioso de contemplar y fotografia la Vía Láctea o la Aurora Boreal en mitad de la más oscura de las nocehes... <br>
+	Suelo buscar mis escenarios en casas Antiguas, Estaciones abandonadas, Vehículos y todo tipo de abandono. Lugares que gracias a la fotografía Nocturna iluminada consiguen transportarnos a otro tiempo e incluso devolver esos vehículos o lugares a la vida por unos segundos y para siempre en una fotografía. <br>
+	Mis proyectos más inmediatos pasan por seguir disfrutando de la Fotografía y los Amigos y momentos que esta nos hace disfrutar.
+</p>
+</section>
+
+<section>
+	<a name="Galeria"></a>
+	<h2>Galeria</h2>
+	<div class="fotos">
+		<div class="foto">
+			<img src="imagenes/DSC_0222.jpg">
+
+			<h3>Fotografia de Eventos</h3>
+		</div>
+		<div class="foto">
+			<img src="imagenes/DSC_0123.jpg">
+			<h3>Fotografia de Naturaleza</h3>
+		</div>
+		<div class="foto">
+			<img src="imagenes/DSC_0010.jpg">
+			<h3>Fotografia Documental</h3>
+		</div>
+	</div>
+
+
+</section>
+
+<main>
+	<a name="Blog"></a>
+	<h2>Blog</h2>
+	<div class="principal centrando">
+	<div class="principal-anuncio">
+		<img src="imagenes/el-sensor-.jpg">
+		<h5>TIPOS Y CARACTERÍSTICAS DE LOS SENSORES</h5>
+		<p>Escrito: 20/03/20 <strong> Por: Mario Pérez</strong></p>
+		<a href="https://www.blogdelfotografo.com/tipos-caracteristicas-ventajas-sensores-camaras-fotos/" class="visitar boton-naranja" target="_blank"> Leer</a>
+	</div>
+	<div class="principal-anuncio">
+		<img src="imagenes/coche.jpg">
+		<h5>TRUCOS Y CONSEJOS PARA FOTOS DE COCHES</h5>
+		<p>Escrito: 22/03/20 <strong> Por: Alexa de Blois</strong></p>
+		<a href="https://www.blogdelfotografo.com/trucos-fotografiar-coches/" class="visitar boton-naranja" target="_blank"> Leer
+		</a>
+	</div>
+	<div class="principal-anuncio">
+		<img src="imagenes/fotoreto.jpg">
+		<h4>RETRATO EN CASA</h4>
+		<p>Escrito: 22/05/20 <strong> Por: Caro Muso</strong></p>
+		<a href="https://www.blogdelfotografo.com/fotoreto52-retrato-casa" class="visitar boton-naranja" target="_blank"> Leer
+		</a>
+	</div>
+	</div>
+</main>
+
+<main>
+	<a name="Testimonios"></a>
+<h2>Testimonios</h2>
+
+<div class="container">
+  <img src="https://s2.glbimg.com/jsaPuF7nO23vRxQkuJ_V3WgouKA=/e.glbimg.com/og/ed/f/original/2014/06/10/461777879.jpg" alt="Avatar" style="width:90px">
+  <p><span>Chris Fox.</span></p>
+  <p>Fuimos buscando algo diferente y acertamos de pleno.Ha sido un trabajo magnifico superando todas nuestras expectativas. Muchas gracias.</p>
+</div>
+
+<div class="container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcToFUouZewMTa99hBYpJqIsRSb_4UGFW7T04Fi0aTcn7QFRbuUx&usqp=CAU" alt="Avatar" style="width:90px">
+  <p><span>Rebecca Flex.</span></p>
+  <p>Muchisimas gracias por una experiencia inolvidable. Unas fotos preciosas, un trato excepcional, la calidad en su trabajo buenísima, un profesional 100%. Lo recomiendo a todo el mundo.</p>
+</div>
+</main>
+
+<a name="Contactanos"></a>
+<div id="contact-form">  
+   <h1>¡Contáctate conmigo!</h1>
+   <h4>Si quieres contactar conmigo, lo puede hacer a través de mi correo electronico o rellenando este sencillo formulario, estare encantado de atender cualquier consulta que quieras hacerme. Muchas Gracias.</h4>  
+   <p id="failure">Oops... Algo anduvo mal.</p>  
+   <p id="success">Gracias, tu mensaje ha sido enviado correctamente.</p>  
+ 
+      <label for="name">Nombre: <span class="required">*</span></label>  
+      <input type="text" id="name" name="name" value="" placeholder="" required="required" autofocus="autofocus" />  
+         
+      <label for="subject">Celular: </label>  
+      <input id="subject" name="subject">
+
+      <label for="email">Correo: <span class="required">*</span></label>  
+      <input type="email" id="email" name="email" value="" placeholder="" required="required" />  
+           
+
+      </input>  
+         
+      <label for="message">Consulta: <span class="required">*</span></label>  
+      <textarea id="message" name="message" placeholder="Escribe tu consulta" required="required"></textarea>  
+           
+      <input type="submit" value="Enviar" id="submit" />
+   </form>  
+</div>
+
+	</body>
+
+	<footer></footer>
+</html>
